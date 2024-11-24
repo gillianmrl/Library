@@ -2,6 +2,8 @@
 
 This project is a Library Management API built using the Slim Framework. It enables the management of users, authors, and their respective functionalities, such as registration, login, authentication, and book postings. The API employs JWT (JSON Web Token) for authentication and token management. 
 
+Created by **Marilao, Gillian Mae C.** from **4-D**.
+
 ***
 
 # Features
