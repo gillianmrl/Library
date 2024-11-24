@@ -53,13 +53,29 @@ This project is a Library Management API built using the Slim Framework. It enab
   "password": "string"
 }
 
-### Response
-
-#### Success Response (when the registration is successful):
+### Response:
+* Success Response (when the registration is successful):
 ```json
 {
   "status": "Success",
   "data": null
 }
 
+* Failure Response (if username already exists): 
+```json
+{
+  "status": "Failed",
+  "data": {
+    "title": "Username already exists"
+  }
+}
+
+* Failure Response (for other database issues):
+```json
+{
+  "status": "Failed",
+  "data": {
+    "title": "Error message"
+  }
+}
 
