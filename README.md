@@ -49,9 +49,10 @@ This project is a Library Management API built using the Slim Framework. It enab
 ### Request Body:
 ```json
 {
-  "username": "string",
-  "password": "string"
+  "username": "gillian",
+  "password": "123"
 }
+```
 
 ### Response: 
 * Success Response (when the registration is successful):
@@ -60,8 +61,9 @@ This project is a Library Management API built using the Slim Framework. It enab
   "status": "Success",
   "data": null
 }
+```
 
-* Failure Response (if username already exists): 
+* Failure Response (if username already exists):
 ```json
 {
   "status": "Failed",
@@ -69,13 +71,21 @@ This project is a Library Management API built using the Slim Framework. It enab
     "title": "Username already exists"
   }
 }
+```
+## 2. User Login (`user/login`)
+- **Method**: `POST`
+- **Description**: This endpoint allows a user to log in by providing their registered username and password. Upon successful authentication, the user receives a JWT (JSON Web Token) for accessing protected resources.
 
-* Failure Response (for other database issues):
+### Request Body: 
 ```json
 {
-  "status": "Failed",
-  "data": {
-    "title": "Error message"
-  }
+  "username": "gillian",
+  "password": "123"
 }
+```
+
+### Response: 
+ 
+
+
 
