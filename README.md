@@ -53,7 +53,7 @@ This project is a Library Management API built using the Slim Framework. It enab
   "password": "string"
 }
 
-### Response:
+### Response: 
 * Success Response (when the registration is successful):
 ```json
 {
