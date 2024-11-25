@@ -10,8 +10,7 @@ Created by **Marilao, Gillian Mae C.** from **4-D**.
 - [Features](#features)
 - [Technology Stack](#technology-stack)
 - [Endpoints Overview](#endpoints-overview)
-- [Endpoint Breakdown](#detailed-endpoint-breakdown)
-- [Installation](#installation)
+- [Endpoint Breakdown](#endpoint-breakdown)
 ---
 
 ## Features
