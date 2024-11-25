@@ -1,45 +1,66 @@
 # Library Management API
 
-This project is a Library Management API built using the Slim Framework. It enables the management of users, authors, and their respective functionalities, such as registration, login, authentication, and book postings. The API employs JWT (JSON Web Token) for authentication and token management. 
+This project is a **Library Management API** built using the Slim Framework. It provides core functionalities for managing users, authors, books, and authentication, offering secure access via JWT (JSON Web Token).
 
 Created by **Marilao, Gillian Mae C.** from **4-D**.
 
-***
+---
 
-# Features
-* **User Management:**
-  * Register and log in as a user
-  * View user accounts
-* **Author Management:**
-  * Register and log in as an author
-  * Post books as an author
-* **Books and Authors:**
-  * Search and view books and authors
-* **Authentication:**
-  * Secure authentication using JWT
+## Table of Contents
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Endpoints Overview](#endpoints-overview)
+- [Endpoint Breakdown](#detailed-endpoint-breakdown)
+- [Installation](#installation)
+---
 
-***
+## Features
+- **User Management**
+  - Register and log in as a user
+  - View user account details
+- **Author Management**
+  - Register and log in as an author
+  - Post and manage books
+- **Book and Author Search**
+  - Search and view books and authors
+- **Authentication**
+  - Secure JWT-based authentication
 
-# Endpoints
+---
 
-## User Endpoints
-  * `POST /user/reg` - Register a new user
-  * `POST /user/login` - Log in a user
-  * `POST /user/auth` - Authenticate the user
-  * `POST /user/acc` - View user account information
+## Technology Stack
+- **Backend Framework**: [Slim Framework](https://www.slimframework.com/)
+- **Database**: MySQL
+- **Authentication**: JWT (JSON Web Token)
+- **Development Environment**: XAMPP
+- **Programming Languages**: PHP, JavaScript
 
-## Author Endpoints
-  * `POST /author/reg` - Register a new author
-  * `POST /author/login` - Log in an author
-  * `POST /author/auth` - Authenticate the author
-  * `POST /author/postBook` - Post a new book by the author
-  * `POST /books/viewBooks` - View the books posted by the logged-in author
+---
 
-## User-End Author Endpoints
-  * `POST /viewAuthor` - View all authors registered in the system
+## Endpoints Overview
 
-## User-End Book and Author Endpoints
-  * `POST /books-authorView` - View a specific author's details and their posted books
+### User Endpoints
+| Endpoint           | Method | Description                         |
+|--------------------|--------|-------------------------------------|
+| `/user/reg`        | POST   | Register a new user                |
+| `/user/login`      | POST   | Log in a user                      |
+| `/user/auth`       | POST   | Authenticate the user              |
+| `/user/acc`        | POST   | View user account details          |
+
+### Author Endpoints
+| Endpoint           | Method | Description                         |
+|--------------------|--------|-------------------------------------|
+| `/author/reg`      | POST   | Register a new author              |
+| `/author/login`    | POST   | Log in an author                   |
+| `/author/auth`     | POST   | Authenticate the author            |
+| `/author/postBook` | POST   | Post a new book by the author      |
+| `/books/viewBooks` | POST   | View books posted by the logged-in author |
+
+### Public Endpoints
+| Endpoint               | Method | Description                       |
+|------------------------|--------|-----------------------------------|
+| `/viewAuthor`          | POST   | View all authors                 |
+| `/books-authorView`    | POST   | View a specific author and books |
 
 ***
 
